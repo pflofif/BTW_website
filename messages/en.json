@@ -1,0 +1,11 @@
+{
+    "Header": {
+        "title": "Hello world!"
+    },
+    "Main": {
+        "content": "Hello Btw its our cool site!"
+    },
+    "Footer": {
+        "content": "Bye World!"
+    }
+}
