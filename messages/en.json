@@ -12,5 +12,37 @@
     },
     "Footer": {
         "content": "Bye World!"
+    },
+    "Schedule": {
+        "first day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "second day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "third day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "fourth day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "fifth day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        }
     }
 }

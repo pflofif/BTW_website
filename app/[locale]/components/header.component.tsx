@@ -22,7 +22,7 @@ export default function Header() {
     }, [])
 
     return (
-        <header className="sticky top-0">
+        <header className="z-10 sticky top-0 ">
 
             <nav className="w-full bg-white">
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">

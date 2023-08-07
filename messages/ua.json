@@ -12,5 +12,37 @@
     },
     "Footer": {
         "content": "Прощай світ!("
+    },
+    "Schedule": {
+        "first day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "second day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "third day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "fourth day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "fifth day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        }
     }
 }
