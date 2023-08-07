@@ -1,6 +1,11 @@
 {
     "Header": {
-        "title": "Првиіт світ!"
+        "BTW": "BTW",
+        "navigation": {
+            "who we": "Хто ми?",
+            "schedule": "Розклад",
+            "speakers": "Спікери"
+        }
     },
     "Main": {
         "content": "Привіт БТВ це наш дуже крутий сайт"
