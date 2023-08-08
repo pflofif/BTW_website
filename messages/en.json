@@ -1,0 +1,75 @@
+{
+    "Header": {
+        "BTW": "BTW",
+        "navigation": {
+            "who we": "Who we?",
+            "schedule": "Schedule",
+            "speakers": "Speakers"
+        }
+    },
+    "Main": {
+        "content": "Hello Btw its our cool site!"
+    },
+    "Footer": {
+        "content": "Bye World!"
+    },
+    "Schedule": {
+        "first day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "second day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "third day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "fourth day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        },
+        "fifth day": {
+            "themeName": "Comming soon",
+            "speaker": "Comming soon",
+            "dateTime": "Comming soon",
+            "place": "Comming soon"
+        }
+    },
+    "Speakers": {
+        "first": {
+            "name": "some name 1",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "second": {
+            "name": "some name 2",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "third": {
+            "name": "some name 3",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "fourth": {
+            "name": "some name 4",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "fifth": {
+            "name": "some name 5",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        }
+    }
+}
