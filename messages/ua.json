@@ -44,5 +44,32 @@
             "dateTime": "Скоро буде",
             "place": "Скоро буде"
         }
+    },
+    "Speakers": {
+        "first": {
+            "name": "якесь супер імя 1",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "second": {
+            "name": "якесь супер імя 2",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "third": {
+            "name": "якесь супер імя 3",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "fourth": {
+            "name": "якесь супер імя 4",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "fifth": {
+            "name": "якесь супер імя 5",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        }
     }
 }

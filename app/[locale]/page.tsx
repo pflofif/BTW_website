@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl"
 import Schedule from "./components/schedule.component";
+import FadeInWhenVisible from "./components/FadeInWhenVisible.component";
+import Speakers from "./components/speakers.component";
 
 const biolerplate = (<div>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales lectus vitae dui tincidunt, id lacinia odio hendrerit. Fusce eu vehicula lorem, eget venenatis elit. Cras cursus tortor quis feugiat accumsan. In eu commodo neque. Nulla pulvinar tortor ultrices cursus varius. Etiam facilisis leo eget ultricies gravida. In vitae auctor ante. Cras nec ligula erat. Suspendisse tempor non massa ut laoreet. Quisque erat elit, tempus non nisi sed, tincidunt condimentum eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -63,7 +65,10 @@ export default function Home() {
   return (
     <main>
       {biolerplate}
-      <Schedule />
+      <FadeInWhenVisible>
+        <Schedule />
+      </FadeInWhenVisible>
+      <Speakers />
     </main>
   )
 }

@@ -44,5 +44,32 @@
             "dateTime": "Comming soon",
             "place": "Comming soon"
         }
+    },
+    "Speakers": {
+        "first": {
+            "name": "some name 1",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "second": {
+            "name": "some name 2",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "third": {
+            "name": "some name 3",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "fourth": {
+            "name": "some name 4",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        },
+        "fifth": {
+            "name": "some name 5",
+            "position": "some position",
+            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+        }
     }
 }
