@@ -1,0 +1,75 @@
+{
+    "Header": {
+        "BTW": "BTW",
+        "navigation": {
+            "who we": "Хто ми?",
+            "schedule": "Розклад",
+            "speakers": "Спікери"
+        }
+    },
+    "Main": {
+        "content": "Привіт БТВ це наш дуже крутий сайт"
+    },
+    "Footer": {
+        "content": "Прощай світ!("
+    },
+    "Schedule": {
+        "first day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "second day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "third day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "fourth day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        },
+        "fifth day": {
+            "themeName": "Скоро буде",
+            "speaker": "Скоро буде",
+            "dateTime": "Скоро буде",
+            "place": "Скоро буде"
+        }
+    },
+    "Speakers": {
+        "first": {
+            "name": "якесь супер імя 1",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "second": {
+            "name": "якесь супер імя 2",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "third": {
+            "name": "якесь супер імя 3",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "fourth": {
+            "name": "якесь супер імя 4",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        },
+        "fifth": {
+            "name": "якесь супер імя 5",
+            "position": "певна позиція",
+            "additionalInformation": "балаллала жуже дуже крутий"
+        }
+    }
+}
