@@ -13,6 +13,10 @@
     "Footer": {
         "content": "Bye World!"
     },
+    "BestInformation": {
+        "learn more": "Learn more",
+        "BEST": "BEST (Board of European Students of Technology) is an international non-profit, non-political, youth public organization, which was established in 1989 in Berlin.<br /><br />Mission – student development BEST helps students achieve an international mindset, a better understanding of cultures and peoples, and develop skills to work in an international environment.<br /><br />Vision – strength in diversity We understand and respect different cultures and societies. The environment we create supports all people in realizing their potential and acting responsibly."
+    },
     "Schedule": {
         "first day": {
             "themeName": "Comming soon",
@@ -46,6 +50,7 @@
         }
     },
     "Speakers": {
+        "title": "Speakers",
         "first": {
             "name": "some name 1",
             "position": "some position",
