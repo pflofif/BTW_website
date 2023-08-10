@@ -2,9 +2,18 @@
     "Header": {
         "BTW": "BTW",
         "navigation": {
-            "who we": "Хто ми?",
-            "schedule": "Розклад",
-            "speakers": "Спікери"
+            "who we": {
+                "title": "Хто ми?",
+                "href": "btwInformationSection"
+            },
+            "schedule": {
+                "title": "Розклад",
+                "href": "scheduleSection"
+            },
+            "speakers": {
+                "title": "Спікери",
+                "href": "speakersSection"
+            }
         }
     },
     "BTW": {

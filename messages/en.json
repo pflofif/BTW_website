@@ -2,9 +2,18 @@
     "Header": {
         "BTW": "BTW",
         "navigation": {
-            "who we": "Who we?",
-            "schedule": "Schedule",
-            "speakers": "Speakers"
+            "who we": {
+                "title": "Who we?",
+                "href": "btwInformationSection"
+            },
+            "schedule": {
+                "title": "Schedule",
+                "href": "scheduleSection"
+            },
+            "speakers": {
+                "title": "Speakers",
+                "href": "speakersSection"
+            }
         }
     },
     "BTW": {
