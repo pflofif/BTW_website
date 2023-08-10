@@ -7,7 +7,7 @@ export default function BestInformation() {
     return (
         <div className="grid lg:grid-cols-2 gap-4 items-center">
             <div className="text-center px-[10%]">
-                <div className="bg-red-200 mb-8 text-left" dangerouslySetInnerHTML={{ __html: t("BEST") }} />
+                <div className="mb-8 text-left" dangerouslySetInnerHTML={{ __html: t("BEST") }} />
                 <a href="https://best-lviv.org.ua" target="_blank"
                     className="border rounded-[100px] px-[5vw] py-4 min-h-max
                             bg-gradient-to-r from-purple-500 to-pink-500

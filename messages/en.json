@@ -7,11 +7,8 @@
             "speakers": "Speakers"
         }
     },
-    "Main": {
-        "content": "Hello Btw its our cool site!"
-    },
-    "Footer": {
-        "content": "Bye World!"
+    "BTW": {
+        "Information": "Best Training Week is a five-day event with incredible workshops covering the most interesting topics in various fields. In addition to gaining new knowledge and motivation, participants will also be able to find friends and colleagues who share their interests.<br/><br/> During the Best Training Week, everyone will have a great opportunity to enjoy interaction with experts and take part in exciting discussions that will help enrich their knowledge and inspire further personal and professional development."
     },
     "BestInformation": {
         "learn more": "Learn more",
@@ -76,5 +73,8 @@
             "position": "some position",
             "additionalInformation": "blbalblablalbalblablalb very ccccol"
         }
+    },
+    "Footer": {
+        "content": "Bye World!"
     }
 }
