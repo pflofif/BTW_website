@@ -18,7 +18,7 @@ export default function Schedule() {
     }, [])
 
     return (
-        <div className="pl-8 lg:px-4">
+        <div id="scheduleSection" className="pl-8 lg:px-4">
             <motion.div
                 exit={{ opacity: 0 }}
                 ref={carousel as React.RefObject<HTMLDivElement>}

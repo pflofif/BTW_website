@@ -8,7 +8,7 @@ export default function Speakers() {
     const t = useTranslations("Speakers");
     let columnIndex = 0;
     return (
-        <div>
+        <div id="speakersSection">
             <h1 className="text-2xl text-center">{t('title')}</h1>
             <div className="lg:grid lg:grid-cols-5  lg:gap-4
                         flex flex-col gap-4 pt-4">

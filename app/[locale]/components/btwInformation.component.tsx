@@ -26,7 +26,7 @@ export default function BtwInformation() {
     }, [currentIndex]);
 
     return (
-        <div className="grid lg:grid-cols-2 gap-4 items-center">
+        <div id="btwInformationSection" className="grid lg:grid-cols-2 gap-4 items-center">
             <div className="flex justify-center items-center select-none">
                 <div ref={carousel} className="flex w-[80vw] lg:w-[20rem] h-[38vh] lg:h-[22rem] px-[5%] overflow-x-scroll snap-x snap-mandatory no-scrollbar">
                     {images.map((img, key) =>

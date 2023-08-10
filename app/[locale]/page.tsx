@@ -9,9 +9,7 @@ export default function Home() {
     <main className="flex flex-col gap-40">
       <BtwInformation />
       <BestInformation />
-      <FadeInWhenVisible>
-        <Schedule />
-      </FadeInWhenVisible>
+      <Schedule />
       <Speakers />
     </main>
   )
