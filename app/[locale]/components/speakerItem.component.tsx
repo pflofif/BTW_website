@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import React, { useState } from "react"
 import DefaultAvatar from "../../../public/DefaultAvatar.jpg"
 import Image from "next/image"
 import SpeakerInformationModal from "./speakerInformationModal.component"
@@ -15,14 +15,14 @@ export default function SpeakerItem({ name, position, additionalInformation }: P
     const [showModal, setShowModal] = useState(false);
     return (
         <>
-            <div
-                className="flex flex-col hover:cursor-pointer"
-                onClick={() => setShowModal(true)}>
+            <>
                 <div className="grid gap-4 justify-center">
-                    <Image className="rounded-full min-h-[15vh] min-w-[55vw] 
-                    lg:min-w-[20vw] lg:min-h-[10vh]
-                    xl:min-w-[16vw] xl:min-h-[8vh]
-                    md:min-w-[30vw] md:min-h-[15vh]"
+                    <Image
+                        onClick={() => setShowModal(true)}
+                        className="rounded-full min-h-[15vh] min-w-[55vw] hover:cursor-pointer
+                                    lg:min-w-[20vw] lg:min-h-[10vh]
+                                    xl:min-w-[16vw] xl:min-h-[8vh]
+                                    md:min-w-[30vw] md:min-h-[15vh]"
                         src={DefaultAvatar.src} alt="photo" width={150} height={100} />
 
                     <div className="text-center">
@@ -31,7 +31,7 @@ export default function SpeakerItem({ name, position, additionalInformation }: P
                     </div>
 
                 </div>
-            </div>
+            </>
 
             <AnimatePresence>
                 {showModal && (
