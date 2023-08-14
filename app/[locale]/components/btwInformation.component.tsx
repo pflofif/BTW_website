@@ -26,14 +26,18 @@ export default function BtwInformation() {
     }, [currentIndex]);
 
     return (
-        <div id="btwInformationSection" className="grid lg:grid-cols-2 gap-4 items-center">
+        <div id="btwInformationSection" className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 items-center">
             <div className="flex justify-center items-center select-none">
-                <div ref={carousel} className="flex w-[80vw] lg:w-[20rem] h-[38vh] lg:h-[22rem] px-[5%] overflow-x-scroll snap-x snap-mandatory no-scrollbar">
+                <div ref={carousel} className="flex w-[80vw]  h-[38vh] px-[5%] overflow-x-scroll snap-x snap-mandatory no-scrollbar
+                        lg:w-[20rem] lg:h-[22rem] 
+                        md:w-[24rem] md:h-[22rem]">
                     {images.map((img, key) =>
-                        <Image key={key} className="min-h-[38vh] lg:min-h-[20rem] min-w-[80vw] lg:min-w-[20rem] snap-center" src={img.src} alt="BTW logo" width={370} height={185} />)}
+                        <Image key={key} className="min-h-[38vh] min-w-[80vw] snap-center
+                         lg:min-h-[20rem] lg:min-w-[20rem] 
+                         md:min-h-[20rem] md:min-w-[24rem] md:pl-8" src={img.src} alt="BTW logo" width={370} height={185} />)}
                 </div>
             </div>
-            <div className="px-[10%] lg:text-xl" dangerouslySetInnerHTML={{ __html: t("Information") }} />
+            <div className="px-[10%] md:px-[5%] lg:text-xl" dangerouslySetInnerHTML={{ __html: t("Information") }} />
         </div>
     )
 }

@@ -18,8 +18,8 @@ export default function Header() {
     const [isNavbarOpen, setNavbar] = useState(false);
     useEffect(() => {
         const scrrenWidth = window.innerWidth;
-        const mobileAndTableMaxSize = 768;
-        if (scrrenWidth > mobileAndTableMaxSize) {
+        const mobileMaxWidth = 425;
+        if (scrrenWidth > mobileMaxWidth) {
             setNavbar(true);
         }
     }, [])
@@ -34,7 +34,7 @@ export default function Header() {
                             <a href="#">
                                 <h2 className="text-2xl font-bold">{t('BTW')}</h2>
                             </a>
-                            <div className="flex flex-row gap-4 items-center lg:md:hidden">
+                            <div className="flex flex-row gap-4 items-center lg:hidden md:hidden">
                                 <LanguageSwitcher lang={lang} />
                                 <button
                                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -44,8 +44,8 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-4">
-                        <LanguageSwitcher className="hidden lg:md:block" lang={lang} />
+                    <div className="flex flex-row gap-4 ">
+                        <LanguageSwitcher className="hidden lg:block md:block" lang={lang} />
                         <div>
                             <AnimatePresence>
                                 {isNavbarOpen && (
@@ -55,7 +55,9 @@ export default function Header() {
                                         animate={{ opacity: 1, height: "auto" }}
                                         exit={{ opacity: 0, height: 0 }}
                                         transition={{ duration: 0.3 }}>
-                                        <ul className="flex flex-col lg:flex-row items-center justify-center space-y-8  lg:md:space-x-6 lg:md:space-y-0">
+                                        <ul className="flex flex-col items-center justify-center space-y-8
+                                        lg:flex-row lg:space-x-6 lg:space-y-0
+                                        md:flex-row  md:space-x-6 md:space-y-0">
                                             {navigation.map(key => {
                                                 const title = t(`navigation.${key}.title`);
                                                 const href = t(`navigation.${key}.href`);

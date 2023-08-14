@@ -19,9 +19,17 @@ export default function SpeakerItem({ name, position, additionalInformation }: P
                 className="flex flex-col hover:cursor-pointer"
                 onClick={() => setShowModal(true)}>
                 <div className="grid gap-4 justify-center">
-                    <Image className="rounded-full min-h-[25vh] min-w-[65vw] lg:min-h-max lg:min-w-max "
+                    <Image className="rounded-full min-h-[15vh] min-w-[55vw] 
+                    lg:min-w-[20vw] lg:min-h-[10vh]
+                    xl:min-w-[16vw] xl:min-h-[8vh]
+                    md:min-w-[30vw] md:min-h-[15vh]"
                         src={DefaultAvatar.src} alt="photo" width={150} height={100} />
-                    {informationContainer(name, position)}
+
+                    <div className="text-center">
+                        <h3>{name}</h3>
+                        <h3>{position}</h3>
+                    </div>
+
                 </div>
             </div>
 
@@ -34,14 +42,5 @@ export default function SpeakerItem({ name, position, additionalInformation }: P
                 )}
             </AnimatePresence>
         </>
-    )
-}
-
-function informationContainer(name: string, position: string) {
-    return (
-        <div className="text-center">
-            <h3>{name}</h3>
-            <h3>{position}</h3>
-        </div>
     )
 }
