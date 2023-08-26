@@ -5,6 +5,7 @@ import BestInformation from "./components/bestInformation.component";
 import BtwInformation from "./components/btwInformation.component";
 import { useTranslations } from "next-intl";
 import TextWithLine from "./components/textWithLine.component";
+import BtwHistory from "./components/btwHistory.component";
 
 export default function Home() {
   const t = useTranslations();
@@ -16,6 +17,7 @@ export default function Home() {
       <TextWithLine titleText={t('Header.navigation.who we.title')} />
 
       <BtwInformation />
+      <BtwHistory />
       <BestInformation />
       <Schedule />
       <Speakers />
