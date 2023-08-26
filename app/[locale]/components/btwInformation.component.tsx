@@ -1,43 +1,66 @@
 "use client"
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
+import { StaticImageData } from "next/dist/shared/lib/get-img-props"
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import images from "../helpers/images";
+import BtwImages from "../helpers/images";
+import ShadowBorder from "./shadowBorder.component";
+import AutoScrollPhotos from "./autoScrollPhotos.component";
 
+type Device = 'mobile' | 'laptop';
 export default function BtwInformation() {
     const t = useTranslations('BTW');
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const carousel = useRef<HTMLDivElement | null>(null);
+    const [images, setImages] = useState<StaticImageData[]>([]);
+    const [deviceType, setDeviceType] = useState<Device>();
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (carousel.current) {
-                const nextIndex = (currentIndex + 1) % images.length;
-                carousel.current.scrollTo({
-                    left: nextIndex * carousel.current.offsetWidth,
-                    behavior: "smooth"
-                });
-                setCurrentIndex(nextIndex);
-            }
-        }, 2500);
-
-        return () => clearInterval(interval);
-
-    }, [currentIndex]);
+        const scrrenWidth = window.innerWidth;
+        const mobileMaxWidth = 425;
+        if (scrrenWidth < mobileMaxWidth) {
+            setImages(BtwImages.concat(BtwImages));
+            setDeviceType('mobile')
+        } else {
+            setDeviceType('laptop')
+        }
+    }, []);
 
     return (
-        <div id="btwInformationSection" className="grid lg:grid-cols-2 md:grid-cols-2 gap-4 items-center">
-            <div className="flex justify-center items-center select-none">
-                <div ref={carousel} className="flex w-[80vw]  h-[38vh] px-[5%] overflow-x-scroll snap-x snap-mandatory no-scrollbar
-                        lg:w-[20rem] lg:h-[22rem] 
-                        md:w-[24rem] md:h-[22rem]">
-                    {images.map((img, key) =>
-                        <Image key={key} className="min-h-[38vh] min-w-[80vw] snap-center
-                         lg:min-h-[20rem] lg:min-w-[20rem] 
-                         md:min-h-[20rem] md:min-w-[24rem] md:pl-8" src={img.src} alt="BTW logo" width={370} height={185} />)}
+        <> {deviceType === 'mobile' ? (
+            <div id="btwInformationSection" className="flex flex-col gap-8">
+
+                <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("Information") }} />
+
+                <div className={`flex justify-center items-center select-none`}>
+                    <ShadowBorder>
+                        <AutoScrollPhotos images={images} />
+                    </ShadowBorder>
+                </div>
+
+                <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("AdditionalInfo") }} />
+            </div>
+        ) : (
+            <div id="btwInformationSection" className="grid lg:grid-rows-2 gap-24 items-center">
+
+                <div className="lg:grid lg:grid-cols-2">
+                    <div className={`flex justify-center items-center select-none`}>
+                        <ShadowBorder>
+                            <AutoScrollPhotos images={BtwImages} />
+                        </ShadowBorder>
+                    </div>
+
+                    <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("Information") }} />
+                </div>
+
+                <div className="lg:grid lg:grid-cols-2">
+                    <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("AdditionalInfo") }} />
+
+
+                    <div className={`flex justify-center items-center select-none }`}>
+                        <ShadowBorder>
+                            <AutoScrollPhotos images={BtwImages} />
+                        </ShadowBorder>
+                    </div>
                 </div>
             </div>
-            <div className="px-[10%] md:px-[5%] lg:text-xl" dangerouslySetInnerHTML={{ __html: t("Information") }} />
-        </div>
+        )}</>
     )
 }

@@ -10,7 +10,7 @@ export default function Home() {
   const t = useTranslations();
 
   return (
-    <main className="flex flex-col gap-40 bg-defaulPurple">
+    <main className="flex flex-col gap-4 lg:gap-24 bg-defaulPurple">
       <div className='bg-bladerunner min-h-[850px]'></div>
 
       <TextWithLine titleText={t('Header.navigation.who we.title')} />
