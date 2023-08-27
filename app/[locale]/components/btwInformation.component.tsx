@@ -15,7 +15,7 @@ export default function BtwInformation() {
 
     useEffect(() => {
         const scrrenWidth = window.innerWidth;
-        const mobileMaxWidth = 425;
+        const mobileMaxWidth = 480;
         if (scrrenWidth < mobileMaxWidth) {
             setImages(BtwImages.concat(CoreteamImages));
             setDeviceType('mobile')
