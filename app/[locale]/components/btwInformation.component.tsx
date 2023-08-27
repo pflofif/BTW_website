@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props"
 import { useTranslations } from "next-intl";
-import BtwImages from "../helpers/images";
+import BtwImages from "../helpers/prevBtwImages";
+import CoreteamImages from "../helpers/coretramImages"
 import ShadowBorder from "./shadowBorder.component";
 import AutoScrollPhotos from "./autoScrollPhotos.component";
 
@@ -16,7 +17,7 @@ export default function BtwInformation() {
         const scrrenWidth = window.innerWidth;
         const mobileMaxWidth = 425;
         if (scrrenWidth < mobileMaxWidth) {
-            setImages(BtwImages.concat(BtwImages));
+            setImages(BtwImages.concat(CoreteamImages));
             setDeviceType('mobile')
         } else {
             setDeviceType('laptop')
@@ -56,7 +57,7 @@ export default function BtwInformation() {
 
                     <div className={`flex justify-center items-center select-none }`}>
                         <ShadowBorder>
-                            <AutoScrollPhotos images={BtwImages} />
+                            <AutoScrollPhotos images={CoreteamImages} />
                         </ShadowBorder>
                     </div>
                 </div>
