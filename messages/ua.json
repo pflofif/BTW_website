@@ -28,6 +28,8 @@
         "BEST": "BEST (Board of European Students of Technology) – міжнародна неприбуткова, неполітична, молодіжна громадська організація, яка була створена 1989 року в Берліні."
     },
     "Schedule": {
+        "title": "Розклад",
+        "month" : "Вересень",
         "first day": {
             "themeName": "Скоро буде",
             "speaker": "Скоро буде",

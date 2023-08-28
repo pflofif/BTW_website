@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col gap-4 lg:gap-24 bg-defaulPurple">
-      <div className='bg-bladerunner min-h-[850px]'></div>
+      <div className='bg-bladerunner bg-cover bg-no-repeat h-screen -mt-16 lg:-mt-24'></div>
 
       <TextWithLine titleText={t('Header.navigation.who we.title')} />
 

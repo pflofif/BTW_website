@@ -1,86 +1,86 @@
 'use client'
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion"
-
-import Image from 'next/image';
-import openNavBarInMobile from "../../../public/navigation-bar.png"
-import closeNavbarInMobile from "../../../public/icons8-close-50.png"
 import { useLocale } from 'next-intl';
+import { Link as ScrollLink } from "react-scroll";
 import LanguageSwitcher from "./languageSwitcher.component";
-import { Link as ScrollLink } from 'react-scroll';
 
 const navigation = ["who we", "schedule", "speakers"];
 
+const Menu = (t: any) => {
+    const locale = useLocale();
+
+    return <div className="flex flex-col items-center justify-center space-y-4 lg:flex-row lg:space-x-6 lg:space-y-0 md:flex-row  md:space-x-6 md:space-y-0">
+        {navigation.map(key => {
+            const title = t(`navigation.${key}.title`);
+            const href = t(`navigation.${key}.href`);
+            return <ScrollLink
+                className="text-white hover:text-blue-600 text-2xl lg:text-[30px]"
+                key={key}
+                to={href}
+                smooth={true}
+                offset={-110}
+            >
+                {title}
+            </ScrollLink>
+        })}
+        <LanguageSwitcher className='text-2xl lg:text-[30px]' lang={locale} />
+    </div>
+}
+
+type BackgroundColor = 'bg-transient' | 'bg-gradient-to-b from-[#000000] to-[#1A0D28]';
+
 export default function Header() {
-    const t = useTranslations("Header");
-    const lang = useLocale();
-    const [isNavbarOpen, setNavbar] = useState(false);
+    const t = useTranslations('Header');
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [scrollBg, setScrollBg] = useState<BackgroundColor>('bg-transient');
+
     useEffect(() => {
-        const scrrenWidth = window.innerWidth;
-        const mobileMaxWidth = 425;
-        if (scrrenWidth > mobileMaxWidth) {
-            setNavbar(true);
-        }
-    }, [])
+        const handleScroll = () => {
+            const h = window.innerHeight - 100;
+            if (window.scrollY > h) {
+                setScrollBg('bg-gradient-to-b from-[#000000] to-[#1A0D28]');
+            } else {
+                setScrollBg('bg-transient');
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <header className="z-10 sticky top-0 ">
+        <nav className={`z-40 sticky top-0 ${showMobileMenu ? 'bg-gradient-to-b from-[#000000] to-[#1A0D28]' : scrollBg}`}>
+            <div className="max-w-7xl mx-auto flex items-center justify-between h-16 lg:h-24">
+                {/*TODO: Chanege font of BTW text*/}<span className="text-[40px] pl-4 lg:pl-0 lg:text-[70px]  text-[#EC49F7] flex-shrink-0  tracking-wider">{t('BTW')}</span>
 
-            <nav className="w-full bg-white">
-                <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-                    <div>
-                        <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                            <a href="#">
-                                <h2 className="text-2xl font-bold">{t('BTW')}</h2>
-                            </a>
-                            <div className="flex flex-row gap-4 items-center lg:hidden md:hidden">
-                                <LanguageSwitcher lang={lang} />
-                                <button
-                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                                    onClick={() => setNavbar(!isNavbarOpen)}>
-                                    <Image src={isNavbarOpen ? closeNavbarInMobile.src : openNavBarInMobile.src} alt="close" width={20} height={20} />
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-row gap-4 ">
-                        <LanguageSwitcher className="hidden lg:block md:block" lang={lang} />
-                        <div>
-                            <AnimatePresence>
-                                {isNavbarOpen && (
-                                    <motion.div
-                                        className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 overflow-hidden`}
-                                        initial={{ opacity: 0, height: 0 }}
-                                        animate={{ opacity: 1, height: "auto" }}
-                                        exit={{ opacity: 0, height: 0 }}
-                                        transition={{ duration: 0.3 }}>
-                                        <ul className="flex flex-col items-center justify-center space-y-8
-                                        lg:flex-row lg:space-x-6 lg:space-y-0
-                                        md:flex-row  md:space-x-6 md:space-y-0">
-                                            {navigation.map(key => {
-                                                const title = t(`navigation.${key}.title`);
-                                                const href = t(`navigation.${key}.href`);
-                                                return <ScrollLink
-                                                    className="text-gray-600 hover:text-blue-600"
-                                                    key={key}
-                                                    to={href}
-                                                    smooth={true}
-                                                    offset={-100}
-                                                >
-                                                    {title}
-                                                </ScrollLink>
-                                            })}
-                                        </ul>
-                                    </motion.div>
-                                )}
-
-                            </AnimatePresence>
-                        </div>
-                    </div>
+                <div className="hidden md:block">
+                    {Menu(t)}
                 </div>
-            </nav>
-        </header>
-    )
+                <button
+                    type="button"
+                    className="md:hidden bg-transient inline-flex items-center justify-center p-2 rounded-md text-gray-400 transition duration-150 ease-in-out"
+                    onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    <svg
+                        className="h-6 w-6"
+                        stroke="currentColor"
+                        fill="none"
+                        viewBox="0 0 24 24">
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+            <div className="md:hidden">
+                {showMobileMenu && Menu(t)}
+            </div>
+        </nav>
+    );
 };
 
