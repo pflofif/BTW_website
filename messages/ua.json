@@ -62,31 +62,36 @@
         }
     },
     "Speakers": {
-        "title": "Спікери",
+        "title": "Наші лектори",
         "first": {
             "name": "якесь супер імя 1",
             "position": "певна позиція",
-            "additionalInformation": "балаллала жуже дуже крутий"
+            "additionalInformation": "балаллала жуже дуже крутий",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "second": {
             "name": "якесь супер імя 2",
             "position": "певна позиція",
-            "additionalInformation": "балаллала жуже дуже крутий"
+            "additionalInformation": "балаллала жуже дуже крутий",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "third": {
             "name": "якесь супер імя 3",
             "position": "певна позиція",
-            "additionalInformation": "балаллала жуже дуже крутий"
+            "additionalInformation": "балаллала жуже дуже крутий",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "fourth": {
             "name": "якесь супер імя 4",
             "position": "певна позиція",
-            "additionalInformation": "балаллала жуже дуже крутий"
+            "additionalInformation": "балаллала жуже дуже крутий",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "fifth": {
             "name": "якесь супер імя 5",
             "position": "певна позиція",
-            "additionalInformation": "балаллала жуже дуже крутий"
+            "additionalInformation": "балаллала жуже дуже крутий",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         }
     },
     "Footer": {

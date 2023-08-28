@@ -1,52 +1,26 @@
 "use client"
 import { useTranslations } from "next-intl";
-import ScheduleItem from "./scheduleItem.component";
-import { motion } from "framer-motion"
-import { useRef, useState, useEffect } from "react";
+import TextWithLine from "./textWithLine.component";
+import SplitLine from "./splitLine.component";
+import TitleText from "./titleText.component";
 
 const days = ["first day", "second day", "third day", "fourth day", "fifth day"];
-
+function CustomTextWithLine({ text }: { text: string }) {
+    return <div>
+        <h1 className="text-center text-[20px] lg:text-[40px]">{text}</h1>
+        <SplitLine />
+    </div>
+}
 export default function Schedule() {
     const t = useTranslations("Schedule");
-    const [width, setWidth] = useState(0);
-    const carousel = useRef<HTMLDivElement>();
-
-    useEffect(() => {
-        if (!carousel.current) return;
-
-        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-    }, [])
 
     return (
-        <div id="scheduleSection" className="pl-8 lg:px-4">
-            <motion.div
-                exit={{ opacity: 0 }}
-                ref={carousel as React.RefObject<HTMLDivElement>}
-                whileTap={{ cursor: "grabbing" }}
-                className="cursor-grab overflow-hidden">
-                <motion.div
-                    drag="x"
-                    dragConstraints={{ right: 0, left: -width }}
-                    className="flex gap-4">
-                    {days.map((day) => {
-                        const themeName = t(`${day}.themeName`);
-                        const speaker = t(`${day}.speaker`);
-                        const dateTime = t(`${day}.dateTime`);
-                        const place = t(`${day}.place`);
 
-                        return (
-                            <ScheduleItem
-                                key={day}
-                                themeName={themeName}
-                                speaker={speaker}
-                                dateTime={dateTime}
-                                place={place}
-                            />
-                        );
-                    })}
-
-                </motion.div>
-            </motion.div>
+        <div id="scheduleSection" className="bg-gradient-to-l from-[#3840A2] via-[#EC49F7] to-[#FFFAFF] p-2 mx-4 rounded-[45px] mt-8 lg:mt-24">
+            <div className="flex flex-col h-[80vh] bg-defaulPurple rounded-[45px]">
+                <TextWithLine titleText={t("title")} />
+                <CustomTextWithLine text={t("month")} />
+            </div>
         </div>
     );
 };

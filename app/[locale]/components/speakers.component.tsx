@@ -2,32 +2,35 @@
 
 import { useTranslations } from "next-intl";
 import SpeakerItem from "./speakerItem.component";
+import TextWithLine from "./textWithLine.component";
+import SpeakerScroller from "./speakerScroller.components";
+import ShadowBorder from "./shadowBorder.component";
 
-const speakers = ["first", "second", "third", "fourth", "fifth"]
+const days = ["first", "second", "third", "fourth", "fifth"]
 export default function Speakers() {
     const t = useTranslations("Speakers");
 
-    return (
-        <div id="speakersSection">
-            <h1 className="text-2xl text-center">{t('title')}</h1>
-            <div className="lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-12
-                            md:grid md:grid-cols-2 md:grid-rows-4 md:gap-8
-                            flex flex-col gap-12 pt-4">
-                {speakers.map(key => {
-                    const name = t(`${key}.name`)
-                    const position = t(`${key}.position`)
-                    const additionalInformation = t(`${key}.additionalInformation`)
+    const speakers = days.map((day, index) => {
+        const name = t(`${day}.name`)
+        const position = t(`${day}.position`)
+        const additionalInformation = t(`${day}.additionalInformation`)
+        const imgSrc = t(`${day}.imageSrc`);
 
-                    return (
-                        <div className={``} key={key}>
-                            <SpeakerItem
-                                name={name}
-                                position={position}
-                                additionalInformation={additionalInformation} />
-                        </div>
-                    )
-                })}
-            </div>
+        return (
+            <SpeakerItem key={index}
+                srcImage={imgSrc}
+                name={name}
+                position={position}
+                additionalInformation={additionalInformation} />
+
+        )
+    })
+
+    return (
+        <div id="speakersSection" >
+            <TextWithLine titleText={t("title")} />
+
+            <SpeakerScroller content={speakers} />
         </div>
     )
 }
