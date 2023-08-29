@@ -1,23 +1,21 @@
 "use client"
 import { motion } from "framer-motion"
-interface Props {
-    themeName: string;
-    speaker: string;
-    dateTime: string;
-    place: string;
+import Image from "next/image";
+interface ScheduleItem {
+    themeName: string,
+    speaker: string,
+    imageSrc: string
 }
 
-const ScheduleItem = ({ themeName, speaker, dateTime, place }: Props) => {
+export default function ScheduleItem({ themeName, speaker, imageSrc }: ScheduleItem) {
+    const sideSize = "[210px]"
     return (
-        <motion.div
-            className="lg:min-w-[48vw] lg:min-h-[80vh]
-                        min-w-[85vw] min-h-[80vh] bg-red-800 rounded-md">
-            <h1 className="text-white text-xl mb-2">{themeName}</h1>
-            <p className="text-white">{speaker}</p>
-            <p className="text-white">{dateTime}</p>
-            <p className="text-white">{place}</p>
-        </motion.div>
+        <div>
+            <Image src={imageSrc} alt="scehedule image" width={220} height={220} className={`w-${sideSize} h-${sideSize}`} />
+            <div className="flex flex-col items-center justify-center pt-4 pb-2">
+                <span className="text-[25px]">{themeName}</span>
+                <span className="text-[20px]">{speaker}</span>
+            </div>
+        </div>
     );
 };
-
-export default ScheduleItem;
