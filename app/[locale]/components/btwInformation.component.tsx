@@ -48,11 +48,11 @@ export default function BtwInformation() {
                         </ShadowBorder>
                     </div>
 
-                    <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("Information") }} />
+                    <div className="px-[10%] md:px-[10%] lg:text-[30px] justify-center " dangerouslySetInnerHTML={{ __html: t("Information") }} />
                 </div>
 
                 <div className="lg:grid lg:grid-cols-2">
-                    <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("AdditionalInfo") }} />
+                    <div className="px-[10%] md:px-[10%] lg:text-[30px] justify-center " dangerouslySetInnerHTML={{ __html: t("AdditionalInfo") }} />
 
 
                     <div className={`flex justify-center items-center select-none }`}>

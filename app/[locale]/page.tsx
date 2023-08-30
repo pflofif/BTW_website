@@ -7,14 +7,14 @@ import { useTranslations } from "next-intl";
 import TextWithLine from "./components/textWithLine.component";
 import BtwHistory from "./components/btwHistory.component";
 import JoinUs from "./components/joinUs.component";
+import StartInformation from "./components/startInformation.component";
 
 export default function Home() {
   const t = useTranslations();
 
   return (
     <main className="flex flex-col gap-4 lg:gap-24 bg-defaulPurple">
-      <div className='bg-bladerunner bg-no-repeat bg-cover h-[50vh]  lg:h-screen -mt-16 lg:-mt-24'></div>
-
+      <StartInformation />
       <TextWithLine titleText={t('Header.navigation.who we.title')} />
 
       <BtwInformation />
