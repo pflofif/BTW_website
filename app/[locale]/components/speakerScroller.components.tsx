@@ -12,7 +12,7 @@ interface Props {
 
 export default function SpeakerScroller({ content }: Props) {
     const [slidestoShow, setSlidesToShow] = useState<number>(1);
-    const slider = useRef(null);
+    const slider = useRef<Slider>(null);
     useEffect(() => {
         if (window.innerWidth <= 480) {
             setSlidesToShow(1)
@@ -29,8 +29,7 @@ export default function SpeakerScroller({ content }: Props) {
         slidesToShow: slidestoShow,
         slidesToScroll: 1
     };
-    const width = 200;
-    const height = 120;
+
     const arrowClass = 'cursor-pointer max-h-[18vh] max-w-[28vw] lg:h-[130px] lg:w-[200px]'
     return (
         <>
