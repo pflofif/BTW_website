@@ -37,7 +37,9 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const h = window.innerHeight - 100;
+            const windowH = window.innerHeight;
+            const h = (window.innerWidth >= 480 ? windowH : windowH / 2) - 100;
+            console.log(h)
             if (window.scrollY > h) {
                 setScrollBg('bg-gradient-to-b from-[#000000] to-[#1A0D28]');
             } else {
