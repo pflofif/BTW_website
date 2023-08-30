@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl"
 import Image from "next/image";
 import BestLogo from "../../../public/best_photos/Best_Lviv_logo.png"
 import TextWithLine from "./textWithLine.component";
+import LearnMoreButton from "./LearnMoreButton.component";
 
 export default function BestInformation() {
     const t = useTranslations("BestInformation");
@@ -13,13 +14,7 @@ export default function BestInformation() {
 
                 <div className="text-center px-[10%]">
                     <div className="mb-8 text-left text-l lg:text-[35px] bg-[#0000004D] p-4" dangerouslySetInnerHTML={{ __html: t("BEST") }} />
-
-                    <a href="https://best-lviv.org.ua" target="_blank"
-                        className="border rounded-[100px] px-8 py-3 lg:px-12 lg:py-4 min-h-max
-                            bg-gradient-button text-xl lg:text-[35px]
-                          text-white">
-                        {t("learn more")}
-                    </a>
+                    <LearnMoreButton href="https://best-lviv.org.ua" />
                 </div>
 
                 <div className="flex justify-center px-[5%] lg:px-0">
