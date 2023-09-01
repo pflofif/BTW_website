@@ -41,7 +41,6 @@ export default function Header() {
         const handleScroll = () => {
             const windowH = window.innerHeight;
             const h = (window.innerWidth >= 480 ? windowH - 100 : windowH / 2 - 64);
-            console.log(h)
             if (window.scrollY > h) {
                 setScrollBg('bg-gradient-to-b from-[#000000] to-[#1A0D28]');
             } else {

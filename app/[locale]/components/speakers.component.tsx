@@ -27,7 +27,7 @@ export default function Speakers() {
     })
 
     return (
-        <div id="speakersSection" >
+        <div id="speakersSection" className="pb-8 lg:pb-24">
             <TextWithLine titleText={t("title")} />
 
             <SpeakerScroller content={speakers} />
