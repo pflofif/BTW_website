@@ -1,7 +1,6 @@
-import { StaticImageData } from "next/image"
-import Instagram from "../../../public/socials/instagram.png"
+import Instagram from "../../../public/socials/Instagram.png"
 import LinkedIn from "../../../public/socials/linkedIn.png"
-import Telegram from "../../../public/socials/telegram.png"
+import Telegram from "../../../public/socials/Telegram.png"
 
 export default [{
     img: Instagram,
