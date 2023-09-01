@@ -16,43 +16,59 @@
             }
         }
     },
+    "StartInformation": {
+        "MobileInformation": "Discover new horizons by learning even more about the fascinating topics that will grab your attention in every sentence.",
+        "LaptopInformation": "The search for opportunity is always the discovery of opportunity."
+    },
     "BTW": {
-        "Information": "Best Training Week is a five-day event with incredible workshops covering the most interesting topics in various fields. In addition to gaining new knowledge and motivation, participants will also be able to find friends and colleagues who share their interests.<br/><br/> During the Best Training Week, everyone will have a great opportunity to enjoy interaction with experts and take part in exciting discussions that will help enrich their knowledge and inspire further personal and professional development."
+        "Information": "BEST Training Week is five days with incredible trainings covering the most interesting topics in various fields. Participants will not only gain new knowledge and skills, but will also be able to find friends or colleagues who share their interests.",
+        "AdditionalInfo": "During the BEST Training Week, everyone will have a great opportunity to enjoy interaction with experts and take part in exciting discussions that will help enrich their knowledge.",
+        "HistoryTitle": "Project History",
+        "History": "In 2013, we had the idea to create the BEST Training Week project. This event helped Lviv Polytechnic students gain new knowledge without any restrictions through short trainings. The organisers of the first such event were Uliana Bilonizhka, Olena Tomchuk, and Oksana Kaminetska. Thanks to the team's well-coordinated work and the desire to make the days of future generations more eventful and exciting, the idea was implemented. The first project gathered a lot of interested people and confirmed that the need for this is really great. Eleven such events have now been held, where students can receive quality information for free. This project has already become an integral part of the student environment, helping young people to quickly learn and find new opportunities for their growth and development.",
+        "JoinUs": "Join us for an unforgettable experience that will help you take your personal and professional life to the next level!"
     },
     "BestInformation": {
         "learn more": "Learn more",
-        "BEST": "BEST (Board of European Students of Technology) is an international non-profit, non-political, youth public organization, which was established in 1989 in Berlin.<br /><br />Mission – student development BEST helps students achieve an international mindset, a better understanding of cultures and peoples, and develop skills to work in an international environment.<br /><br />Vision – strength in diversity We understand and respect different cultures and societies. The environment we create supports all people in realizing their potential and acting responsibly."
+        "Organizer": "Project organiser",
+        "BEST": "BEST (Board of European Students of Technology) is an international non-profit, non-political, youth NGO that was established in 1989 in Berlin."
     },
     "Schedule": {
+        "title": "Schedule",
+        "month": "September",
         "first day": {
-            "themeName": "Comming soon",
-            "speaker": "Comming soon",
-            "dateTime": "Comming soon",
-            "place": "Comming soon"
+            "dayName": "Mon",
+            "date": "18",
+            "themeName": "coming soon 1",
+            "speaker": "coming soon 1",
+            "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "second day": {
-            "themeName": "Comming soon",
-            "speaker": "Comming soon",
-            "dateTime": "Comming soon",
-            "place": "Comming soon"
+            "dayName": "Tue",
+            "date": "19",
+            "themeName": "coming soon 2",
+            "speaker": "coming soon 2",
+            "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "third day": {
-            "themeName": "Comming soon",
-            "speaker": "Comming soon",
-            "dateTime": "Comming soon",
-            "place": "Comming soon"
+            "dayName": "Wed",
+            "date": "20",
+            "themeName": "coming soon 3",
+            "speaker": "coming soon 3",
+            "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "fourth day": {
-            "themeName": "Comming soon",
-            "speaker": "Comming soon",
-            "dateTime": "Comming soon",
-            "place": "Comming soon"
+            "dayName": "Thu",
+            "date": "21",
+            "themeName": "coming soon 4",
+            "speaker": "coming soon 4",
+            "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "fifth day": {
-            "themeName": "Comming soon",
-            "speaker": "Comming soon",
-            "dateTime": "Comming soon",
-            "place": "Comming soon"
+            "dayName": "Fri",
+            "date": "22",
+            "themeName": "coming soon 5",
+            "speaker": "coming soon 5",
+            "imageSrc": "/scheduleImages/firstDayImage.png"
         }
     },
     "Speakers": {
@@ -60,30 +76,32 @@
         "first": {
             "name": "some name 1",
             "position": "some position",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+            "additionalInformation": "blbalblablalbalblablalb very ccccol",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "second": {
             "name": "some name 2",
             "position": "some position",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+            "additionalInformation": "blbalblablalbalblablalb very ccccol",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "third": {
             "name": "some name 3",
             "position": "some position",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+            "additionalInformation": "blbalblablalbalblablalb very ccccol",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "fourth": {
             "name": "some name 4",
             "position": "some position",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+            "additionalInformation": "blbalblablalbalblablalb very ccccol",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "fifth": {
             "name": "some name 5",
             "position": "some position",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol"
+            "additionalInformation": "blbalblablalbalblablalb very ccccol",
+            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         }
-    },
-    "Footer": {
-        "content": "Bye World!"
     }
 }
