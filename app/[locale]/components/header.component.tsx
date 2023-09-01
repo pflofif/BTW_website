@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { useLocale } from 'next-intl';
 import { Link as ScrollLink } from "react-scroll";
 import LanguageSwitcher from "./languageSwitcher.component";
+import BtwLogo from "../../../public/bTw.png"
+import Image from "next/image";
 
 const navigation = ["who we", "schedule", "speakers"];
 
@@ -38,7 +40,7 @@ export default function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const windowH = window.innerHeight;
-            const h = (window.innerWidth >= 480 ? windowH : windowH / 2) - 100;
+            const h = (window.innerWidth >= 480 ? windowH - 100 : windowH / 2 - 64);
             console.log(h)
             if (window.scrollY > h) {
                 setScrollBg('bg-gradient-to-b from-[#000000] to-[#1A0D28]');
@@ -56,8 +58,8 @@ export default function Header() {
     return (
         <nav className={`z-40 sticky top-0 ${showMobileMenu ? 'bg-gradient-to-b from-[#000000] to-[#1A0D28]' : scrollBg}`}>
             <div className="max-w-7xl mx-auto flex items-center justify-between h-16 lg:h-24">
-                {/*TODO: Chanege font of BTW text*/}<span className="text-[40px] pl-4 lg:pl-0 lg:text-[70px]  text-[#EC49F7] flex-shrink-0  tracking-wider">{t('BTW')}</span>
-
+                <Image className="w-[100px] h-[35px] ml-4 lg:ml-0 lg:w-[182px] lg:h-[54px]" src={BtwLogo.src} alt="btw logo"
+                    width={300} height={100} />
                 <div className="hidden md:block">
                     {Menu(t)}
                 </div>
