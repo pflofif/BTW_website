@@ -120,7 +120,7 @@ export default function Schedule() {
                     </div>
                 </div> :
                 <div className="bg-defaulPurple rounded-[45px]">
-                    <TextWithLine titleText={t("title")} />
+                    <div className="py-2"><TextWithLine titleText={t("title")} /></div>
                     <div className="flex flex-col items-center justify-center mx-[5%]">
                         <div className="flex flex-row gap-4">{
                             (scheduleItems as ScheduleItemWithDayAndTime[]).slice(0, 2).map((schedule, index) => {

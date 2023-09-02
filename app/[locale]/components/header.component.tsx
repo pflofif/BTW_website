@@ -17,7 +17,7 @@ const Menu = (t: any) => {
             const title = t(`navigation.${key}.title`);
             const href = t(`navigation.${key}.href`);
             return <ScrollLink
-                className="text-white hover:text-blue-600 text-2xl lg:text-[30px]"
+                className="text-white hover:text-blue-600 text-2xl lg:text-[27px]"
                 key={key}
                 to={href}
                 smooth={true}
@@ -26,11 +26,11 @@ const Menu = (t: any) => {
                 {title}
             </ScrollLink>
         })}
-        <LanguageSwitcher className='text-2xl lg:text-[30px]' lang={locale} />
+        <LanguageSwitcher className='text-2xl lg:text-[27px]' lang={locale} />
     </div>
 }
 
-type BackgroundColor = 'bg-transient' | 'bg-gradient-to-b from-[#000000] to-[#1A0D28]';
+type BackgroundColor = 'bg-transient' | 'bg-gradient-to-b from-[#000000] via-[#1A0D28] to-transient';
 
 export default function Header() {
     const t = useTranslations('Header');
@@ -42,7 +42,7 @@ export default function Header() {
             const windowH = window.innerHeight;
             const h = (window.innerWidth >= 480 ? windowH - 100 : windowH / 2 - 64);
             if (window.scrollY > h) {
-                setScrollBg('bg-gradient-to-b from-[#000000] to-[#1A0D28]');
+                setScrollBg('bg-gradient-to-b from-[#000000] via-[#1A0D28] to-transient');
             } else {
                 setScrollBg('bg-transient');
             }

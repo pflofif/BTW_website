@@ -28,7 +28,7 @@ export default function BtwInformation() {
         <> {deviceType === 'mobile' ? (
             <div id="btwInformationSection" className="flex flex-col gap-8">
 
-                <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center " dangerouslySetInnerHTML={{ __html: t("Information") }} />
+                <div className="px-[10%] md:px-[10%] lg:text-[25px] justify-center content-center" dangerouslySetInnerHTML={{ __html: t("Information") }} />
 
                 <div className={`flex justify-center items-center select-none`}>
                     <ShadowBorder>
@@ -40,28 +40,29 @@ export default function BtwInformation() {
             </div>
         ) : (
             <div id="btwInformationSection" className="grid lg:grid-rows-2 gap-24 items-center">
-
                 <div className="lg:grid lg:grid-cols-2">
-                    <div className={`flex justify-center items-center select-none`}>
+                    <div className="flex justify-center items-center select-none">
                         <ShadowBorder>
                             <AutoScrollPhotos images={BtwImages} />
                         </ShadowBorder>
                     </div>
-
-                    <div className="px-[10%] md:px-[10%] lg:text-[30px] justify-center " dangerouslySetInnerHTML={{ __html: t("Information") }} />
+                    <div className="px-[10%] md:px-[10%] lg:text-[30px] flex flex-col justify-center items-center">
+                        <div dangerouslySetInnerHTML={{ __html: t("Information") }} />
+                    </div>
                 </div>
 
                 <div className="lg:grid lg:grid-cols-2">
-                    <div className="px-[10%] md:px-[10%] lg:text-[30px] justify-center " dangerouslySetInnerHTML={{ __html: t("AdditionalInfo") }} />
-
-
-                    <div className={`flex justify-center items-center select-none }`}>
+                    <div className="px-[10%] md:px-[10%] lg:text-[30px] flex flex-col justify-center items-center">
+                        <div dangerouslySetInnerHTML={{ __html: t("AdditionalInfo") }} />
+                    </div>
+                    <div className="flex justify-center items-center select-none">
                         <ShadowBorder>
                             <AutoScrollPhotos images={CoreteamImages} />
                         </ShadowBorder>
                     </div>
                 </div>
             </div>
+
         )}</>
     )
 }
