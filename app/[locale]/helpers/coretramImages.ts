@@ -1,9 +1,9 @@
-import first from "../../../public/coreteam_photos/first.png"
-import second from "../../../public/coreteam_photos/second.png"
-import third from "../../../public/coreteam_photos/third.png"
-import four from "../../../public/coreteam_photos/fourth.png"
-import five from "../../../public/coreteam_photos/fife.png"
-import six from "../../../public/coreteam_photos/six.png"
-import seven from "../../../public/coreteam_photos/seven.png"
+import MO from "../../../public/coreteam_photos/MO.png"
+import CR from "../../../public/coreteam_photos/CR.png"
+import DS from "../../../public/coreteam_photos/DS.png"
+import IT from "../../../public/coreteam_photos/IT.png"
+import LG from "../../../public/coreteam_photos/LG.png"
+import MT from "../../../public/coreteam_photos/MT.png"
+import PR from "../../../public/coreteam_photos/PR.png"
 
-export default [first, second, third, four, five, six, seven]
+export default [MO, MT, CR, DS, IT, LG, PR]
