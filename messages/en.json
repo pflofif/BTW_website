@@ -38,68 +38,68 @@
         "first day": {
             "dayName": "Mon",
             "date": "18",
-            "themeName": "coming soon 1",
-            "speaker": "coming soon 1",
+            "themeName": "coming soon",
+            "speaker": "coming soon",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "second day": {
             "dayName": "Tue",
             "date": "19",
-            "themeName": "coming soon 2",
-            "speaker": "coming soon 2",
+            "themeName": "coming soon",
+            "speaker": "coming soon",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "third day": {
             "dayName": "Wed",
             "date": "20",
-            "themeName": "coming soon 3",
-            "speaker": "coming soon 3",
+            "themeName": "coming soon",
+            "speaker": "coming soon",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "fourth day": {
             "dayName": "Thu",
             "date": "21",
-            "themeName": "coming soon 4",
-            "speaker": "coming soon 4",
+            "themeName": "coming soon",
+            "speaker": "coming soon",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "fifth day": {
             "dayName": "Fri",
             "date": "22",
-            "themeName": "coming soon 5",
-            "speaker": "coming soon 5",
+            "themeName": "coming soon",
+            "speaker": "coming soon",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         }
     },
     "Speakers": {
         "title": "Speakers",
         "first": {
-            "name": "some name 1",
-            "position": "some position",
+            "name": "coming soon",
+            "position": "coming soon",
             "additionalInformation": "blbalblablalbalblablalb very ccccol",
             "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "second": {
-            "name": "some name 2",
-            "position": "some position",
+            "name": "coming soon",
+            "position": "coming soon",
             "additionalInformation": "blbalblablalbalblablalb very ccccol",
             "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "third": {
-            "name": "some name 3",
-            "position": "some position",
+            "name": "coming soon",
+            "position": "coming soon",
             "additionalInformation": "blbalblablalbalblablalb very ccccol",
             "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "fourth": {
-            "name": "some name 4",
-            "position": "some position",
+            "name": "coming soon",
+            "position": "coming soon",
             "additionalInformation": "blbalblablalbalblablalb very ccccol",
             "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         },
         "fifth": {
-            "name": "some name 5",
-            "position": "some position",
+            "name": "coming soon",
+            "position": "coming soon",
             "additionalInformation": "blbalblablalbalblablalb very ccccol",
             "imageSrc": "/spekerImages/DefaultAvatar.jpg"
         }
