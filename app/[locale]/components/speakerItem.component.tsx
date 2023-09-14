@@ -14,7 +14,7 @@ export default function SpeakerItem({ name, position, srcImage }: Props) {
 
             <div className="flex flex-col items-center justify-center pt-8 pb-4">
                 <span className="text-[20px] lg:text-[30px]">{name}</span>
-                <span className="text-[14px] lg:text-[22px] text-center">{position}</span>
+                <span className="text-[14px] lg:text-[15px] text-center">{position}</span>
             </div>
         </div>
     )
