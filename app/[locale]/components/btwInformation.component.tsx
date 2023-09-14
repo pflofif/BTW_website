@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props"
 import { useTranslations } from "next-intl";
-import BtwImages from "../helpers/prevBtwImages";
 import CoreteamImages from "../helpers/coretramImages"
 import ShadowBorder from "./shadowBorder.component";
 import AutoScrollPhotos from "./autoScrollPhotos.component";
@@ -17,7 +16,6 @@ export default function BtwInformation() {
         const scrrenWidth = window.innerWidth;
         const mobileMaxWidth = 480;
         if (scrrenWidth < mobileMaxWidth) {
-            setImages(BtwImages.concat(CoreteamImages));
             setDeviceType('mobile')
         } else {
             setDeviceType('laptop')

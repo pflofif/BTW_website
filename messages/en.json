@@ -74,34 +74,29 @@
     "Speakers": {
         "title": "Speakers",
         "first": {
-            "name": "coming soon",
-            "position": "coming soon",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Dan Belitsky",
+            "position": "Tourism within Ukraine",
+            "imageSrc": "/spekerImages/first.png"
         },
         "second": {
-            "name": "coming soon",
-            "position": "coming soon",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Yulia Yushchuk",
+            "position": "Personal brand in IT",
+            "imageSrc": "/spekerImages/second.png"
         },
         "third": {
-            "name": "coming soon",
-            "position": "coming soon",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Dmytro Shchudra",
+            "position": "How games are developed and who can work in game development",
+            "imageSrc": "/spekerImages/third.png"
         },
         "fourth": {
-            "name": "coming soon",
-            "position": "coming soon",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Angela Matusowska",
+            "position": "How to get recommended",
+            "imageSrc": "/spekerImages/four.png"
         },
         "fifth": {
-            "name": "coming soon",
-            "position": "coming soon",
-            "additionalInformation": "blbalblablalbalblablalb very ccccol",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Mykhailo Patsan",
+            "position": "ChatGPT and Web3 as tools for effective development",
+            "imageSrc": "/spekerImages/five.png"
         }
     }
 }

@@ -74,34 +74,29 @@
     "Speakers": {
         "title": "Наші лектори",
         "first": {
-            "name": "Скоро буде",
-            "position": "Скоро буде",
-            "additionalInformation": "балаллала жуже дуже крутий",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Ден Бєліцький",
+            "position": "Туризм у межах України",
+            "imageSrc": "/spekerImages/first.png"
         },
         "second": {
-            "name": "Скоро буде",
-            "position": "Скоро буде",
-            "additionalInformation": "балаллала жуже дуже крутий",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Юлія Ющук",
+            "position": "Особистий бренд в ІТ",
+            "imageSrc": "/spekerImages/second.png"
         },
         "third": {
-            "name": "Скоро буде",
-            "position": "Скоро буде",
-            "additionalInformation": "балаллала жуже дуже крутий",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Дмитро Щудра",
+            "position": "Як розробляють ігри та ким працювати у геймдеві",
+            "imageSrc": "/spekerImages/third.png"
         },
         "fourth": {
-            "name": "Скоро буде",
-            "position": "Скоро буде",
-            "additionalInformation": "балаллала жуже дуже крутий",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Анжела Матусовська",
+            "position": "Як попасти в рек",
+            "imageSrc": "/spekerImages/four.png"
         },
         "fifth": {
-            "name": "Скоро буде",
-            "position": "Скоро буде",
-            "additionalInformation": "балаллала жуже дуже крутий",
-            "imageSrc": "/spekerImages/DefaultAvatar.jpg"
+            "name": "Михайло Пацан",
+            "position": "ChatGPT та Web3 - як інструменти для ефективного розвитку",
+            "imageSrc": "/spekerImages/five.png"
         }
     }
 }
