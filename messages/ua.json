@@ -38,45 +38,45 @@
         "first day": {
             "dayName": "ПН",
             "date": "18",
-            "themeName": "Скоро буде",
-            "speaker": "Скоро буде 1",
-            "imageSrc": "/scheduleImages/firstDayImage.png"
+            "themeName": "Особистий бренд в ІТ",
+            "speaker": "Юлія Ющук",
+            "imageSrc": "/scheduleImages/Brand.png"
         },
         "second day": {
             "dayName": "ВТ",
             "date": "19",
-            "themeName": "Скоро буде",
-            "speaker": "Скоро буде",
-            "imageSrc": "/scheduleImages/firstDayImage.png"
+            "themeName": "Як розробляють ігри та ким можна працювати у геймдеві",
+            "speaker": "Шудра Дмитро",
+            "imageSrc": "/scheduleImages/game.png"
         },
         "third day": {
             "dayName": "СР",
             "date": "20",
-            "themeName": "Скоро буде",
-            "speaker": "Скоро буде",
-            "imageSrc": "/scheduleImages/firstDayImage.png"
+            "themeName": "Туризм в межах України",
+            "speaker": "Тарас Михайлів",
+            "imageSrc": "/scheduleImages/Tourist.png"
         },
         "fourth day": {
             "dayName": "ЧТ",
             "date": "21",
-            "themeName": "Скоро буде",
-            "speaker": "Скоро буде",
-            "imageSrc": "/scheduleImages/firstDayImage.png"
+            "themeName": "Як попасти в Рек",
+            "speaker": "Aнжела Матусовська",
+            "imageSrc": "/scheduleImages/Rek.png"
         },
         "fifth day": {
             "dayName": "ПТ",
             "date": "22",
-            "themeName": "Скоро буде",
-            "speaker": "Скоро буде",
-            "imageSrc": "/scheduleImages/firstDayImage.png"
+            "themeName": "ChatGPT та Web3",
+            "speaker": "Михайло Пацан",
+            "imageSrc": "/scheduleImages/AI.png"
         }
     },
     "Speakers": {
         "title": "Наші лектори",
         "first": {
-            "name": "Ден Бєліцький",
+            "name": "Тарас Михайлів",
             "position": "Туризм у межах України",
-            "imageSrc": "/spekerImages/first.png"
+            "imageSrc": "/spekerImages/firstSpeaker.png"
         },
         "second": {
             "name": "Юлія Ющук",
@@ -84,7 +84,7 @@
             "imageSrc": "/spekerImages/second.png"
         },
         "third": {
-            "name": "Дмитро Щудра",
+            "name": "Дмитро Шудра",
             "position": "Як розробляють ігри та ким працювати у геймдеві",
             "imageSrc": "/spekerImages/third.png"
         },

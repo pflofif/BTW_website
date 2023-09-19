@@ -38,45 +38,45 @@
         "first day": {
             "dayName": "Mon",
             "date": "18",
-            "themeName": "coming soon",
-            "speaker": "coming soon",
+            "themeName": "Yulia Yushchuk",
+            "speaker": "Personal brand in IT",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "second day": {
             "dayName": "Tue",
             "date": "19",
-            "themeName": "coming soon",
-            "speaker": "coming soon",
+            "themeName": "How games are developed and who can work in game development",
+            "speaker": "Dmitry Shurda",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "third day": {
             "dayName": "Wed",
             "date": "20",
-            "themeName": "coming soon",
-            "speaker": "coming soon",
+            "themeName": "Tourism within Ukraine",
+            "speaker": "Taras Mykhayliv",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "fourth day": {
             "dayName": "Thu",
             "date": "21",
-            "themeName": "coming soon",
-            "speaker": "coming soon",
+            "themeName": "How to get recommended",
+            "speaker": "Angela Matusovska",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         },
         "fifth day": {
             "dayName": "Fri",
             "date": "22",
-            "themeName": "coming soon",
-            "speaker": "coming soon",
+            "themeName": "ChatGPT and Web3 as tools for effective development",
+            "speaker": "Michael Patsan",
             "imageSrc": "/scheduleImages/firstDayImage.png"
         }
     },
     "Speakers": {
         "title": "Speakers",
         "first": {
-            "name": "Dan Belitsky",
+            "name": "Taras Mykhayliv",
             "position": "Tourism within Ukraine",
-            "imageSrc": "/spekerImages/first.png"
+            "imageSrc": "/spekerImages/firstSpeaker.png"
         },
         "second": {
             "name": "Yulia Yushchuk",
@@ -84,17 +84,17 @@
             "imageSrc": "/spekerImages/second.png"
         },
         "third": {
-            "name": "Dmytro Shchudra",
+            "name": "Dmitry Shurda",
             "position": "How games are developed and who can work in game development",
             "imageSrc": "/spekerImages/third.png"
         },
         "fourth": {
-            "name": "Angela Matusowska",
+            "name": "Angela Matusovska",
             "position": "How to get recommended",
             "imageSrc": "/spekerImages/four.png"
         },
         "fifth": {
-            "name": "Mykhailo Patsan",
+            "name": "Michael Patsan",
             "position": "ChatGPT and Web3 as tools for effective development",
             "imageSrc": "/spekerImages/five.png"
         }
